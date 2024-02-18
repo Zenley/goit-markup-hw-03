@@ -87,7 +87,6 @@ h4 {
 .global-header {
     background-color: #E7E9FC;
     border: 1px;
-    margin-bottom: -45px;
 }
 
 [href$=".html"] {
