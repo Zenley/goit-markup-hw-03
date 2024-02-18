@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 :root {
     --subtitle-color: #2E2F42;
     --text-color: #434455;
@@ -5,7 +11,7 @@
         sans-serif;
     --logo-font-family: "Raleway",
         sans-serif;
-
+}
     button[type="button"] {
         cursor: pointer;
     }
@@ -25,7 +31,6 @@
         line-height: 1, 31;
         font-size: 18px;
     }
-}
 
 a {
     text-decoration: none;

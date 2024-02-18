@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 :root {
     --subtitle-color: #2E2F42;
     --text-color: #434455;
@@ -5,6 +10,7 @@
         sans-serif;
     --logo-font-family: "Raleway",
         sans-serif;
+}
 
     button[type="button"] {
         cursor: pointer;
@@ -25,7 +31,6 @@
         line-height: 1, 31;
         font-size: 18px;
     }
-}
 
 a {
     text-decoration: none;
@@ -55,7 +60,7 @@ h4 {
 .nav-list li {
     list-style: none;
     display: inline-block;
-    line-height: 1, 5;
+    line-height: 1.5;
 }
 [href$=".html"]:hover{
     color: #404BBF;
@@ -79,6 +84,7 @@ color: #404BBF;
 .hero-section {
     background-color: #2E2F42;
     height: 600px;
+    margin-right: auto;
 }
 
 .hero-section>h1 {
@@ -88,7 +94,7 @@ color: #404BBF;
     font-size: 56px;
     line-height: 3.75;
 }
-
+/* Background color for the nav bar */
 .global-header {
     background-color: #E7E9FC;
     border: 1px;
@@ -193,163 +199,3 @@ color: #404BBF;
     font-size: 18px;
 }
 
-/* Portofolio only */
-.portofolio-buttons {
-    text-align: center;
-}
-
-.portofolio-buttons>li {
-    list-style: none;
-}
-
-/* Image list */
-
-.portofolio-list-one {
-    list-style: none;
-    display: flex;
-}
-
-.portofolio-list-one>li>h4 {
-    color: var(--subtitle-color);
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.portofolio-list-one>li>p {
-    color: var(--text-color);
-    line-height: 1.5;
-}
-
-.portofolio-list-two {
-    list-style: none;
-    display: flex;
-}
-
-.portofolio-list-two>li>h4 {
-    color: var(--subtitle-color);
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.portofolio-list-two>li>p {
-    color: var(--text-color);
-    line-height: 1.5;
-}
-
-.portofolio-list-three {
-    list-style: none;
-    display: flex;
-}
-
-.portofolio-list-three>li>h4 {
-    color: var(--subtitle-color);
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.portofolio-list-three>li>p {
-    color: var(--text-color);
-    line-height: 1.5;
-}
-
-.filters {
-    margin-top: 50px;
-}
-
-.all-button {
-    font-family: var(--title-font-family);
-    text-align: center;
-    background-color: #E7E9FC;
-    width: 69px;
-    height: 48px;
-    border-radius: 4px;
-    border: 1px;
-    padding: 12px, 24px;
-    color: #4D5AE5;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.all-button:hover {
-    background-color: #404BBF;
-    color: #ffffff;
-}
-
-.web-button {
-    font-family: var(--title-font-family);
-    text-align: center;
-    background-color: #E7E9FC;
-    width: 116px;
-    height: 48px;
-    border-radius: 4px;
-    border: 1px;
-    padding: 12px, 24px;
-    color: #4D5AE5;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.web-button:hover {
-    background-color: #404BBF;
-    color: #ffffff;
-}
-
-.app-button {
-    font-family: var(--title-font-family);
-    text-align: center;
-    background-color: #E7E9FC;
-    width: 78px;
-    height: 48px;
-    border-radius: 4px;
-    border: 1px;
-    padding: 12px, 24px;
-    color: #4D5AE5;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.app-button:hover {
-    background-color: #404BBF;
-    color: #ffffff;
-}
-
-.design-button{
-    font-family: var(--title-font-family);
-    text-align: center;
-    background-color: #E7E9FC;
-    width: 101px;
-    height: 48px;
-    border-radius: 4px;
-    border: 1px;
-    padding: 12px, 24px;
-    color: #4D5AE5;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-}
-.design-button:hover{
-    background-color: #404BBF;
-    color: #ffffff;
-}
-
-.marketing-button {
-    font-family: var(--title-font-family);
-    text-align: center;
-    background-color: #E7E9FC;
-    width: 126px;
-    height: 48px;
-    border-radius: 4px;
-    border: 1px;
-    padding: 12px, 24px;
-    color: #4D5AE5;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-}
-.marketing-button:hover{
-    background-color: #404BBF;
-    color: #ffffff;
-}
