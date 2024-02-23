@@ -28,8 +28,10 @@
         font-family: var(--logo-font-family);
         font-weight: 800;
         color: #2E2F42;
-        line-height: 1, 31;
+        line-height: 1.31;
         font-size: 18px;
+        padding-right: 76px;
+        padding-left: 40px;
     }
 
 a {
@@ -50,18 +52,27 @@ h4 {
 }
 
 /* NAV STYLING */
+
+.global-header {
+    display: flex;
+    justify-content: center;
+}
+
 .nav-bar {
     list-style: none;
     font-weight: 500;
     color: var(--subtitle-color);
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
 }
 
-.nav-list li {
+.nav-list{
+    display: flex;
+    gap: 40px;
     list-style: none;
-    display: inline-block;
     line-height: 1.5;
 }
+
 [href$=".html"]:hover{
     color: #404BBF;
 }
@@ -69,36 +80,53 @@ h4 {
     color: #404BBF;
 }
 /* PHONE AND EMAIL COLOR */
-.global-header>a {
-    color: var(--text-color);
+
+.contact{
+    list-style: none;
     line-height: 1.5;
+    display: inline-flex;
+    gap: 40px;
+    padding-left: 310px;
 }
-.global-header>a:hover{
+
+.contact>li>a{
+    color: var(--text-color)
+}
+
+.contact>li>a:hover {
 color: #404BBF;
 }
 
-.global-header>a:focus{
+.contact>li>a:focus {
     color: #404BBF;
 }
+
 /* Background color for hero section */
 .hero-section {
     background-color: #2E2F42;
     height: 600px;
     margin-right: auto;
+    padding: 94px 0;
 }
 
-.hero-section>h1 {
-    color: #ffffff;
-    text-align: center;
-    padding-top: 182px;
-    font-size: 56px;
-    line-height: 3.75;
-}
+
 /* Background color for the nav bar */
 .global-header {
     background-color: #E7E9FC;
     border: 1px;
-    margin-bottom: -45px;
+}
+
+.hero-title{
+    color: #ffffff;
+    font-family: var(--title-font-family);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 [href$=".html"] {
@@ -112,22 +140,39 @@ color: #404BBF;
     border-radius: 4px;
     width: 169px;
     height: 56px;
-    text-align: center;
     color: #ffffff;
-    margin-left: 835px;
-    font-weight: 500;
     line-height: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 845px;
+    margin-top: 48px;
 }
+
+
+
 
 .order-service:hover{
     background-color: #E7E9FC;
     color: #4D5AE5;
 }
 
+.section-one{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.container{
+    width: 1200px;
+}
+
 .description-tab {
     list-style: none;
     line-height: 1.5;
-    display: inline-flex;
+    display: flex;
+    gap: 24px;
 }
 
 .description-tab>li>h4 {
@@ -139,6 +184,11 @@ color: #404BBF;
     color: var(--text-color);
 }
 
+.section-two{
+    display: flex;
+    justify-content: center;
+}
+
 .what-we-do {
     text-align: center;
     color: var(--subtitle-color);
@@ -148,11 +198,18 @@ color: #404BBF;
 
 .what-we-do-pics {
     list-style: none;
-    text-align: center
+    display: flex;
+    gap: 24px;
 }
 
 .what-we-do-pics li {
-    display: inline-block;
+    justify-content: space-between;
+}
+
+.section-three{
+    display: flex;
+    justify-content: center;
+    padding: 94px 0;
 }
 
 .our-team {
@@ -163,24 +220,27 @@ color: #404BBF;
 .our-team-pics {
     list-style: none;
     line-height: 1.5;
+    display: flex;
+    gap: 24px;
 }
 
 .our-team-pics>li {
     text-align: center;
-    display: inline-block;
-    padding-right: 24px;
-    align-items: center;
 }
 
 .address {
     line-height: 1.5;
     color: #ffffff;
+    padding-top: 16px;
+    display: flex;
+    padding-left: 365px;
 }
 
 .footer {
     background-color: #2E2F42;
     height: 312px;
-    padding-top: 100px;
+    padding: 94px 0;
+    display: flex;
 }
 
 .logo-footer::before {
@@ -189,6 +249,7 @@ color: #404BBF;
     font-family: var(--logo-font-family);
     font-weight: 800;
     font-size: 18px;
+    padding-left: 365px;
 }
 
 .logo-footer {
@@ -198,4 +259,3 @@ color: #404BBF;
     line-height: 1.31;
     font-size: 18px;
 }
-
